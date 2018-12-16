@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ListCellView" rowHeight="78" id="UUf-Hu-slo" customClass="ListCellView" customModule="NetizensTask" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="UUf-Hu-slo" id="u2P-aV-aPZ">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="69.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" spacing="29" translatesAutoresizingMaskIntoConstraints="NO" id="SsW-i6-VHz">
+                        <rect key="frame" x="70" y="10" width="290" height="49.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vQh-KR-Q3y">
+                                <rect key="frame" x="0.0" y="0.0" width="290" height="49.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zwk-Q7-4ps">
+                        <rect key="frame" x="10" y="10" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="g2K-fy-ngR"/>
+                            <constraint firstAttribute="height" constant="50" id="nXH-98-CK3"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="SsW-i6-VHz" secondAttribute="trailing" constant="15" id="6xq-zI-rOG"/>
+                    <constraint firstItem="zwk-Q7-4ps" firstAttribute="centerY" secondItem="u2P-aV-aPZ" secondAttribute="centerY" id="ETi-Ts-V1x"/>
+                    <constraint firstAttribute="bottom" secondItem="SsW-i6-VHz" secondAttribute="bottom" constant="10" id="K9y-dY-cGd"/>
+                    <constraint firstItem="SsW-i6-VHz" firstAttribute="top" secondItem="u2P-aV-aPZ" secondAttribute="top" constant="10" id="iKv-Yt-FRP"/>
+                    <constraint firstItem="SsW-i6-VHz" firstAttribute="leading" secondItem="zwk-Q7-4ps" secondAttribute="trailing" constant="10" id="wcN-zb-m3h"/>
+                    <constraint firstItem="zwk-Q7-4ps" firstAttribute="leading" secondItem="u2P-aV-aPZ" secondAttribute="leading" constant="10" id="zRf-ua-Ik0"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="picView" destination="zwk-Q7-4ps" id="B5C-lD-6jj"/>
+                <outlet property="titleLabel" destination="vQh-KR-Q3y" id="ZkS-Zq-OPb"/>
+            </connections>
+            <point key="canvasLocation" x="128.80000000000001" y="-19.790104947526238"/>
+        </tableViewCell>
+    </objects>
+</document>
